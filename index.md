@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student @ UIUC ECE
+I am a grad student @ UIUC ECE
 
 ## Research Interests
 
