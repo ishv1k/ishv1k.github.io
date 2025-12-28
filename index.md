@@ -18,3 +18,6 @@ I have a broad interest in **systems** and **computer architecture**. I am curre
 - **Fast and Safe I/O Memory Protection in Virtual Environments**
   - Analyzing I/O memory-protection overheads in virtualized environments
   - Redesigning virtualization stacks to provide high performance without compromising safety guarantees.
+
+## Publications
+(soon, hopefully!)
