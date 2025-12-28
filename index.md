@@ -12,9 +12,9 @@ I have a broad interest in **systems** and **computer architecture**. I am curre
 
 ## Projects
 
-- Rearchitecting Storage Stacks for Host Interconnect Bottlenecks
+- **Rearchitecting Storage Stacks for Host Interconnect Bottlenecks**
   - Developed a contention-detection mechanism to detect host-interconnect bottlenecks
   - Rearchitected the Linux block layer to dynamically regulate in-flight I/O requests based on observed contention levels, achieving improved overall throughput and latency.
-- Fast and Safe I/O Memory Protection in Virtual Environments
+- **Fast and Safe I/O Memory Protection in Virtual Environments**
   - Analyzing I/O memory-protection overheads in virtualized environments
   - Redesigning virtualization stacks to provide high performance without compromising safety guarantees.
