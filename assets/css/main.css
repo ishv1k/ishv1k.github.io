@@ -24,6 +24,7 @@ body {
   margin: 0;
   text-align: justify;
   text-justify: inter-word;
+  hyphens: none;
 }
 
 main {
@@ -75,7 +76,6 @@ h3 {
 p { margin: 0 0 10px; }
 
 .biography > p, .contact-links, section > p { font-size: var(--text-size); }
-.biography > p:not(.affiliation), section > p { hyphens: auto; }
 
 .introduction {
   display: grid;
