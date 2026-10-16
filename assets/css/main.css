@@ -52,8 +52,8 @@ h1, h2, h3 {
 h1 {
   color: var(--name);
   margin: 0 0 12px;
-  font-size: calc(var(--section-heading-size) + 2px);
-  font-weight: 400;
+  font-size: calc(var(--section-heading-size));
+  font-weight: 200;
   letter-spacing: -0.025em;
 }
 
