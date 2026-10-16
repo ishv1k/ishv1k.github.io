@@ -22,8 +22,7 @@
 
 body {
   margin: 0;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   hyphens: none;
 }
 
