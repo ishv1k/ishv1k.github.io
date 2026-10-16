@@ -1,10 +1,18 @@
 :root {
-  color-scheme: dark;
+  --background: #f7f5f0;
+  --text: #303a46;
+  --name: #1c2d41;
+  --section-heading: #245e61;
+  --publication-title: #433c68;
+  --link: #245b9d;
+  --metadata: #536071;
+  --status: #7a543b;
+  color-scheme: light;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.7;
-  color: #e8e9eb;
-  background: #242830;
+  color: var(--text);
+  background: var(--background);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -18,7 +26,7 @@ main {
 }
 
 a {
-  color: #91b9f4;
+  color: var(--link);
   text-decoration: none;
   text-underline-offset: 0.2em;
 }
@@ -26,16 +34,17 @@ a {
 a:hover { text-decoration: underline; }
 
 a:focus-visible {
-  outline: 2px solid #91b9f4;
+  outline: 2px solid var(--link);
   outline-offset: 4px;
 }
 
 h1, h2, h3 {
-  color: #f0f1f3;
+  color: var(--publication-title);
   line-height: 1.35;
 }
 
 h1 {
+  color: var(--name);
   margin: 0 0 12px;
   font-size: 40px;
   font-weight: 650;
@@ -43,6 +52,7 @@ h1 {
 }
 
 h2 {
+  color: var(--section-heading);
   margin: 0 0 16px;
   font-size: 27px;
   font-weight: 600;
@@ -65,7 +75,7 @@ p { margin: 0 0 16px; }
   gap: 36px;
 }
 
-.affiliation { color: #b5bac3; font-size: 17px; line-height: 1.6; }
+.affiliation { color: var(--metadata); font-size: 17px; line-height: 1.6; }
 
 .profile-photo {
   display: block;
@@ -92,15 +102,15 @@ section > p:last-child { margin-bottom: 0; }
 }
 
 .publications li + li { margin-top: 30px; }
-.authors { margin: 0 0 5px; font-size: 16px; line-height: 1.65; }
-.status { margin: 0; color: #a9afb9; font-size: 15px; }
+.authors { color: var(--metadata); margin: 0 0 5px; font-size: 16px; line-height: 1.65; }
+.status { margin: 0; color: var(--status); font-size: 15px; }
 
 .skip-link {
   position: absolute;
   top: 12px;
   left: 24px;
   padding: 6px 10px;
-  background: #242830;
+  background: var(--background);
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: translateY(0); }
