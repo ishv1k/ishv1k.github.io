@@ -1,0 +1,36 @@
+---
+layout: homepage
+---
+<header class="introduction">
+  <div class="biography">
+    <h1>Ishvik Kumar Singh</h1>
+    <p class="affiliation">PhD Student, Electrical and Computer Engineering<br>University of Illinois Urbana-Champaign</p>
+    <p>I am a second-year PhD student working on computer systems. My research interests include operating systems, computer networks, ML systems, and hardware/software co-design.</p>
+    <nav class="contact-links" aria-label="Contact and profiles">
+      <a href="mailto:iksingh2@illinois.edu">Email</a>
+      <a href="https://github.com/ishv1k">GitHub</a>
+      <a href="https://www.linkedin.com/in/ishvik-kumar-singh">LinkedIn</a>
+      <a href="{{ '/assets/files/CV_latest.pdf' | relative_url }}">CV</a>
+    </nav>
+  </div>
+  <img class="profile-photo" src="{{ '/assets/img/avatar.png' | relative_url }}" alt="Ishvik Kumar Singh" width="88" height="88">
+</header>
+
+<section aria-labelledby="research">
+  <h2 id="research">Research</h2>
+  <p>I study how operating systems and hardware can work together to build efficient, safe systems. My work spans storage congestion control and IOMMU-based memory protection in virtualized environments, including formalizing the trade-offs between safety and performance in I/O protection.</p>
+  <p>I also explore systems for machine learning, focusing on GPU memory pooling and LLM serving through NVLink peer-to-peer access.</p>
+</section>
+
+<section aria-labelledby="publications">
+  <h2 id="publications">Publications</h2>
+  <ul class="publications">
+    {% for publication in site.data.publications %}
+    <li>
+      <h3>{{ publication.title | escape }}</h3>
+      <p class="authors">{{ publication.authors | escape }}</p>
+      <p class="status">{{ publication.status | escape }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
