@@ -53,7 +53,7 @@ h1 {
   color: var(--name);
   margin: 0 0 12px;
   font-size: calc(var(--section-heading-size));
-  font-weight: 200;
+  font-weight: 350;
   letter-spacing: -0.025em;
 }
 
