@@ -4,7 +4,7 @@
   font-size: 18px;
   line-height: 1.7;
   color: #e8e9eb;
-  background: #111317;
+  background: #242830;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -100,7 +100,7 @@ section > p:last-child { margin-bottom: 0; }
   top: 12px;
   left: 24px;
   padding: 6px 10px;
-  background: #111317;
+  background: #242830;
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: translateY(0); }
