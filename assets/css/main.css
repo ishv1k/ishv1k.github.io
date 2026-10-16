@@ -12,7 +12,7 @@
   color-scheme: light;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: var(--text-size);
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--text);
   background: var(--background);
   -webkit-text-size-adjust: 100%;
@@ -27,8 +27,8 @@ body {
 }
 
 main {
-  width: min(100% - 48px, 780px);
-  margin: 76px auto 88px;
+  width: min(100% - 40px, 800px);
+  margin: 60px auto 72px;
 }
 
 a {
@@ -72,7 +72,7 @@ h3 {
   line-height: 1.5;
 }
 
-p { margin: 0 0 16px; }
+p { margin: 0 0 10px; }
 
 .biography > p, .contact-links, section > p { font-size: var(--text-size); }
 .biography > p:not(.affiliation), section > p { hyphens: auto; }
@@ -84,7 +84,7 @@ p { margin: 0 0 16px; }
   gap: 36px;
 }
 
-.affiliation { color: var(--metadata); font-size: 16px; line-height: 1.6; }
+.affiliation { color: var(--metadata); font-size: 16px; line-height: 1.45; }
 
 .profile-photo {
   display: block;
@@ -111,7 +111,7 @@ section > p:last-child { margin-bottom: 0; }
 }
 
 .publications li + li { margin-top: 30px; }
-.authors { color: var(--metadata); margin: 0 0 5px; font-size: 16px; line-height: 1.65; }
+.authors { color: var(--metadata); margin: 0 0 5px; font-size: 16px; line-height: 1.5; }
 .status { margin: 0; color: var(--status); font-size: 15px; }
 
 .skip-link {
@@ -126,8 +126,8 @@ section > p:last-child { margin-bottom: 0; }
 
 @media (max-width: 600px) {
   :root { --section-heading-size: 25px; }
-  main { width: calc(100% - 40px); margin: 36px auto 56px; }
-  .introduction { grid-template-columns: minmax(0, 1fr) 66px; gap: 18px; }
+  main { width: calc(100% - 32px); margin: 28px auto 48px; }
+  .introduction { grid-template-columns: minmax(0, 1fr) 66px; gap: 12px 18px; }
   .profile-photo { width: 66px; height: 66px; }
   .affiliation { font-size: 16px; }
   section { margin-top: 34px; }
