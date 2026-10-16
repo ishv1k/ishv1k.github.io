@@ -28,7 +28,7 @@ layout: homepage
     {% for publication in site.data.publications %}
     <li>
       <h3>{{ publication.title | escape }}</h3>
-      <p class="authors">{{ publication.authors | escape }}</p>
+      <p class="authors">{% for author_id in publication.authors %}{% assign author = site.data.authors[author_id] %}{% if author.self %}<strong class="self-author">{{ author.name | escape }}</strong>{% elsif author.url %}<a href="{{ author.url | escape }}">{{ author.name | escape }}</a>{% else %}{{ author.name | escape }}{% endif %}{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}</p>
       <p class="status">{{ publication.status | escape }}</p>
     </li>
     {% endfor %}

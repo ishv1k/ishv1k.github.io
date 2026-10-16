@@ -1,18 +1,18 @@
 :root {
   --text-size: 16px;
-  --section-heading-size: 27px;
-  --background: #f7f5f0;
-  --text: #303a46;
-  --name: #1c2d41;
-  --section-heading: #245e61;
-  --publication-title: #433c68;
-  --link: #245b9d;
-  --metadata: #536071;
-  --status: #7a543b;
+  --section-heading-size: 22px;
+  --background: #faf9f6;
+  --text: #38434c;
+  --name: #1f2c36;
+  --section-heading: #24545b;
+  --publication-title: #263b49;
+  --link: #235e8d;
+  --metadata: #5b666e;
+  --status: #6b6357;
   color-scheme: light;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: var(--text-size);
-  line-height: 1.5;
+  line-height: 1.48;
   color: var(--text);
   background: var(--background);
   -webkit-text-size-adjust: 100%;
@@ -28,69 +28,74 @@ body {
 }
 
 main {
-  width: min(100% - 40px, 800px);
-  margin: 60px auto 72px;
+  width: min(100% - 40px, 780px);
+  margin: 48px auto 64px;
 }
 
 a {
   color: var(--link);
   text-decoration: none;
-  text-underline-offset: 0.2em;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
 }
 
 a:hover { text-decoration: underline; }
 
 a:focus-visible {
   outline: 2px solid var(--link);
-  outline-offset: 4px;
+  outline-offset: 3px;
 }
 
 h1, h2, h3 {
-  color: var(--publication-title);
-  line-height: 1.35;
+  line-height: 1.3;
+  text-align: left;
 }
 
 h1 {
   color: var(--name);
-  margin: 0 0 12px;
-  font-size: calc(var(--section-heading-size));
-  font-weight: 600;
+  margin: 0 0 10px;
+  font-size: calc(var(--section-heading-size) + 2px);
+  font-weight: 500;
   letter-spacing: -0.025em;
 }
 
 h2 {
   color: var(--section-heading);
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   font-size: var(--section-heading-size);
   font-weight: 600;
   letter-spacing: -0.015em;
 }
 
 h3 {
-  margin: 0 0 5px;
+  color: var(--publication-title);
+  margin: 0 0 3px;
   font-size: var(--text-size);
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
-p { margin: 0 0 10px; }
-
-.biography > p, .contact-links, section > p { font-size: var(--text-size); }
+p { margin: 0 0 8px; }
 
 .introduction {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 88px;
   align-items: start;
-  gap: 36px;
+  gap: 30px;
 }
 
-.affiliation { color: var(--metadata); font-size: 16px; line-height: 1.45; }
+.affiliation {
+  color: var(--metadata);
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: left;
+}
 
 .profile-photo {
   display: block;
   width: 88px;
   height: 88px;
-  margin-top: 4px;
+  margin-top: 2px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -98,10 +103,12 @@ p { margin: 0 0 10px; }
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 22px;
+  gap: 6px 20px;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-section { margin-top: 48px; }
+section { margin-top: 34px; }
 section > p:last-child { margin-bottom: 0; }
 
 .publications {
@@ -110,35 +117,42 @@ section > p:last-child { margin-bottom: 0; }
   margin: 0;
 }
 
-.publications li + li { margin-top: 30px; }
-.authors { color: var(--metadata); margin: 0 0 5px; font-size: 16px; line-height: 1.5; }
-.status { margin: 0; color: var(--status); font-size: 15px; }
+.publications li + li { margin-top: 22px; }
+.authors {
+  color: var(--metadata);
+  margin: 0 0 3px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+.authors a { text-decoration: underline; }
+.self-author { color: var(--name); font-weight: 600; }
+.status { margin: 0; color: var(--status); font-size: 13px; }
 
 .skip-link {
   position: absolute;
-  top: 12px;
-  left: 24px;
-  padding: 6px 10px;
+  top: 8px;
+  left: 20px;
+  padding: 4px 8px;
   background: var(--background);
   transform: translateY(-200%);
 }
 .skip-link:focus { transform: translateY(0); }
 
 @media (max-width: 600px) {
-  :root { --section-heading-size: 25px; }
-  main { width: calc(100% - 32px); margin: 28px auto 48px; }
-  .introduction { grid-template-columns: minmax(0, 1fr) 66px; gap: 12px 18px; }
+  :root { --section-heading-size: 21px; }
+  main { width: calc(100% - 32px); margin: 28px auto 44px; }
+  .introduction { grid-template-columns: minmax(0, 1fr) 66px; gap: 10px 18px; }
   .profile-photo { width: 66px; height: 66px; }
-  .affiliation { font-size: 16px; }
-  section { margin-top: 34px; }
-  .contact-links { gap: 8px 18px; }
+  section { margin-top: 28px; }
+  .contact-links { gap: 6px 18px; }
 }
 
 @media (max-width: 420px) {
-  .introduction { grid-template-columns: minmax(0, 1fr) 66px; }
   .biography { display: contents; }
   h1 { grid-column: 1; margin-bottom: 0; align-self: center; }
   .profile-photo { grid-column: 2; grid-row: 1; margin-top: 0; }
   .affiliation, .biography > p, .contact-links { grid-column: 1 / -1; }
   .introduction p { margin-bottom: 0; }
+  .contact-links { margin-top: 0; }
 }

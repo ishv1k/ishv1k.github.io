@@ -1,7 +1,19 @@
 - title: Rearchitecting Storage Stacks for Host Interconnect Bottlenecks
-  authors: Ishvik Kumar Singh, Shreyas Kharbanda, Rachit Agarwal, Saksham Agarwal.
+  authors:
+    - ishvik
+    - shreyas
+    - rachit
+    - saksham
   status: Under review.
 
 - title: "Virtually Free: Making Strict I/O Memory Protection Feasible for Virtualized Environments"
-  authors: Leshna Balara, Siyuan Chai, Ishvik Kumar Singh, Owen Cochell, Jiyuan Zhang, Rachit Agarwal, Tianyin Xu, Saksham Agarwal.
+  authors:
+    - leshna
+    - siyuan
+    - ishvik
+    - owen
+    - jiyuan
+    - rachit
+    - tianyin
+    - saksham
   status: Under review.
