@@ -125,7 +125,7 @@ section > p:last-child { margin-bottom: 0; }
   line-height: 1.5;
   text-align: left;
 }
-.authors a { text-decoration: underline; }
+section a { text-decoration: underline; }
 .self-author { color: var(--name); font-weight: 600; }
 .status { margin: 0; color: var(--status); font-size: 13px; }
 
